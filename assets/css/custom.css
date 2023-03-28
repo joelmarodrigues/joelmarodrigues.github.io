@@ -55,7 +55,7 @@ nav.theme-dark a#btn-cta:focus,
 nav.theme-dark a#btn-cta:hover,
 nav.theme-dark a#btn-cta:active {
   color: var(--white-000);
-  background: linear-gradient(to right, #210558, #810179);
+  background: linear-gradient(to right, #033331, #9a05df);
   border-color: #ffffff;
 }
 
