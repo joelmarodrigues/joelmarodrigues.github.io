@@ -18,7 +18,7 @@ document.addEventListener("scroll", () => {
 
 
 //Typing Text
-const typedText = ["Hello, I'm Joelma Rodrigues, a designer and developer."];
+const typedText = ["Hello, I'm Joelma Rodrigues! Discover my talent as a designer and web developer."];
 const typingDelay = 80;
 const erasingDelay = 30;
 const newTextDelay = 1000;
@@ -51,21 +51,4 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, newTextDelay + 250);
-});
-
-
-//Carrousel
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.slide');
-
-// Set the width of the carousel based on the number of slides
-carousel.style.width = (slides.length * 500) + (slides.length - 1) * 20 + 'px';
-
-// Add event listener to scroll the carousel left or right when the user clicks the arrow buttons
-document.querySelector('.scroll-left').addEventListener('click', function() {
-  carousel.scrollLeft -= 500;
-});
-
-document.querySelector('.scroll-right').addEventListener('click', function() {
-  carousel.scrollLeft += 500;
 });

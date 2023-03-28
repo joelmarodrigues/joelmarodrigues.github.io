@@ -2,49 +2,36 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
-/* Desktop styles */
-
+/* menu */
 nav.menu-sticky {
   background-color: transparent;
   transition: background-color 0.6s ease;
 }
 
 nav.menu-sticky.active {
-  background-color: black;
+  background-color: transparent;
 }
 
+nav.menu-sticky.links-wrapper li a:hover {
+  color: #810179;
+  background-color: #000000;
+}
+
+/* Hello */
 h2.text-shadow {
-  font-family: "Courier New", monospace;
+  font-size: auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 60%;
+  margin: 0 auto;
 }
-
-.links-wrapper li a:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.btn-corn:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-
 
 /* View my work */
 header.theme-dark .container-btn a.btn:nth-child(1):link,
 header.theme-dark .container-btn a.btn:nth-child(1):visited {
-  background-color: var(--trans-000);
+  background: linear-gradient(to right, #033331, #9a05df);
   color: #ffffff;
   border-color: white;
-
-}
-
-header.theme-dark .container-btn a.btn:nth-child(1):focus,
-header.theme-dark .container-btn a.btn:nth-child(1):hover,
-header.theme-dark .container-btn a.btn:nth-child(1):active {
-  color: var(--white-000);
-  background: #12043E;
-  border-color: #12043E;
 }
 
 .btn i {
@@ -56,266 +43,47 @@ header.theme-dark .container-btn a.btn:nth-child(1):active {
 }
 
 
-/* Sign in*/
+/* Contact*/
 nav.theme-dark a#btn-cta:link,
 nav.theme-dark a#btn-cta:visited {
-  background-color: transparent;
-  color: white;
-  border-color:  white;
+  color: var(--white-000);
+  background: transparent;
+  border-color: #ffffff;
 }
 
 nav.theme-dark a#btn-cta:focus,
 nav.theme-dark a#btn-cta:hover,
 nav.theme-dark a#btn-cta:active {
-  border-color: #5b0a82;
-  background:  #5b0a82;
-  color: white;
+  color: var(--white-000);
+  background: linear-gradient(to right, #210558, #810179);
+  border-color: #ffffff;
 }
 
-/* Section 1 */
-.portfolio-carousel {
-  background-color: #f2f2f2;
-  padding: 80px 0;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
-  margin-right: 20px;
-}
-
-.slide img {
+/* Section 1: About me */
+.separator {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+  background: linear-gradient(to right, black, #5E17EB);
 }
 
-.slide-info {
-  margin-top: 20px;
+.separator h1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
   text-align: center;
+  padding: 5rem 0;
+}
+.separator h1 span.highlight {
+  color: #FF00ED;
 }
 
-.slide-info h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+.section-selector-1 { background-color: var(--black-000) }
+.section-selector-1 .col-text p { color: white}
 
-.slide-info p {
-  font-size: 16px;
-  color: #666666;
-}
+/* Section 2: Portfolio*/
 
 
+/* Section 3: Contact */
 
-/* Section 2 */
-
-
-/* Section 3: Portfolio*/
-
-
-/* Section 4: Contact */
-.section-selector-4 {
-  background-color: var(--slate-050);
-}
-
-.section-selector-4>h2 {
-  color: var(--amber-500);
-}
-
-.section-selector-4>h2 span.highlight {
-  color: var(--black-000);
-}
-
-.section-selector-4 p {
-  color: var(--gray-800);
-}
-
-.container-contact-form {
-  background-color: var(--slate-050);
-}
-
-#contact-form [type="text"] {
-  background-color: var(--yellow-600);
-}
-
-#contact-form [type="email"] {
-  background-color: var(--yellow-600);
-}
-
-#contact-form textarea {
-  background-color: var(--yellow-600);
-}
-
-#contact-form [type="text"] {
-  background-color: var(--gray-200);
-}
-
-#contact-form [type="email"] {
-  background-color: var(--gray-200);
-}
-
-#contact-form textarea {
-  background-color: var(--gray-200);
-}
-
-#contact-form #btn-submit {
-  background-color: var(--black-000);
-}
-
-#contact-form #btn-submit {
-  border-radius: 45px;
-}
-
-#contact-form {
-  background-color: var(--amber-500);
-  border-radius: 45px;
-}
-
-#contact-form label {
-  color: var(--white-000);
-  border-radius: 25px;
-}
-
-#contact-form [type="text"] {
-  background-color: var(--slate-050);
-}
-
-#contact-form [type="email"] {
-  background-color: var(--slate-050);
-}
-
-#contact-form textarea {
-  background-color: var(--slate-050);
-}
-
-#contact-form #btn-submit {
-  color: var(--white-000);
-}
-
-#contact-form #btn-submit:focus {
-  color: var(--black-000);
-}
-
-#contact-form #btn-submit:hover {
-  color: var(--black-000);
-}
-
-#contact-form #btn-submit:focus {
-  background-color: var(--white-000);
-}
-
-#contact-form #btn-submit:hover {
-  background-color: var(--white-000);
-}
-
-#contact-form #btn-submit:focus {
-  border-color: var(--white-000);
-}
-
-#contact-form #btn-submit:hover {
-  border-color: var(--black-000);
-}
-
-#contact-form #btn-submit {
-  border-color: var(--black-000);
-}
-
-#container-contact-form {
-  background-color: var(--slate-050);
-}
-
-#contact-form h2 {
-  color: var(--black-000);
-  font-weight: 700;
-  font-size: 35px;
-}
-
-#contact-form p {
-  color: var(--white-000);
-  font-weight: 500;
-  font-size: 25px;
-}
-
-/* Section 5: About Me */
-.section-selector-5 {
-  background-color: black;
-}
-
-.section-selector-5 h2 {
-  color: #5B0A82;
-}
-
-.section-selector-5 .col-2.col-text h2 span.highlight {
-  color: var(--gray-900);
-}
-
-.section-selector-5 .col-2.col-text p {
-  color: var(--gray-800);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):link,
-.section-selector-5 .container-btn a.btn:nth-child(1):visited {
-  color: var(--white-000);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):link,
-.section-selector-5 .container-btn a.btn:nth-child(1):visited {
-  background-color: var(--amber-500);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):link,
-.section-selector-5 .container-btn a.btn:nth-child(1):visited {
-  border-color: var(--amber-500);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):focus,
-.section-selector-5 .container-btn a.btn:nth-child(1):hover,
-.section-selector-5 .container-btn a.btn:nth-child(1):active .container-btn {
-  border-color: var(--amber-500);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):focus,
-.section-selector-5 .container-btn a.btn:nth-child(1):hover,
-.section-selector-5 .container-btn a.btn:nth-child(1):active {
-  color: var(--amber-500);
-}
-
-.section-selector-5 .container-btn a.btn:nth-child(1):focus,
-.section-selector-5 .container-btn a.btn:nth-child(1):hover,
-.section-selector-5 .container-btn a.btn:nth-child(1):active {
-  background-color: var(--white-000);
-}
-
-.section-selector-5 .col-1 h2 {
-  color: var(--amber-500);
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.section-selector-5 .col-3 p {
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.section-selector-5 .col-3 a {
-  color: var(--gray-800);
-  font-weight: 500;
-  font-size: 18px;
-}
 
 /* Footer */
 footer {
