@@ -1,0 +1,47 @@
+/* Add your custom CSS here */
+body  { 
+        font-family: 'Outfit', sans-serif; }
+
+.container-text h1 {
+    font-weight: 400; 
+}
+.container-text h2 {
+    font-weight: 400; 
+    letter-spacing: 4px; 
+}
+
+/* Section 1 */
+.section-selector-1 p       { color: var(--white-000); font-weight: 400; }
+.section-selector-1         { background-color: var(--trend-700) }
+.section-selector-1 h2      { color: var(--white-000); font-weight: 400; }
+.section-selector-1 .badge  { 
+    background-color: var(--trend-700);
+    color: var(--white-000);
+    font-weight: 400; 
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* Section 2 */
+.section-selector-2 h2                                  { color: var(--white-000); font-weight: 400;}
+.section-selector-2 .col-2.col-text p                   { color: var(--white-000); font-weight: 400;}
+.section-selector-2                                     { background-color: var(--trend-800)        }
+.section-selector-2 .col-2.col-text h2 span.highlight   { color: var(--white-000); font-weight: 400;}
+.section-selector-2 .col-2.col-text ul li               { color: var(--white-000); font-weight: 400;}
+
+/* Section 3 */
+.section-selector-3 h2                  { color: var(--white-000); font-weight: 400;}
+.section-selector-3 .col-2.col-text p   { color: var(--white-000); font-weight: 400;}
+.section-selector-3                     { background-color: var(--trend-700)        }
+
+/* Section 4 */
+.section-selector-4                     { background-color: var(--trend-800);       }
+.section-selector-4 h2                  { color: var(--white-000); font-weight: 400 }
+.section-selector-4 .col-2.col-text p   { color: var(--white-000); font-weight: 400 }
+
+/* Section 5 */
+.section-selector-5                     { background-color: var(--trend-700);       }
+.section-selector-5 h2                  { color: var(--white-000); font-weight: 700;}
+.section-selector-5 h3                  { color: var(--white-000); font-weight: 700;}
+.section-selector-5 p                   { color: var(--white-000); font-weight: 400 }
+.section-selector-5 div[class^='flex-cols-'] div[class^='col-'] figure.icon { color: var(--blue-300) }
