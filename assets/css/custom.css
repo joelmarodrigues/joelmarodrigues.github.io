@@ -17,6 +17,22 @@ nav.menu-sticky.links-wrapper li a:hover {
   background-color: #000000;
 }
 
+/* Contact*/
+nav.theme-dark a#btn-cta:link,
+nav.theme-dark a#btn-cta:visited {
+  color: var(--white-000);
+  background: transparent;
+  border-color: #ffffff;
+}
+
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active {
+  color: var(--white-000);
+  background: linear-gradient(to right, #033331, #9a05df);
+  border-color: #ffffff;
+}
+
 /* Hello */
 h2.text-shadow {
   font-size: auto;
@@ -42,47 +58,122 @@ header.theme-dark .container-btn a.btn:nth-child(1):visited {
   transform: rotate(90deg);
 }
 
-
-/* Contact*/
-nav.theme-dark a#btn-cta:link,
-nav.theme-dark a#btn-cta:visited {
-  color: var(--white-000);
-  background: transparent;
-  border-color: #ffffff;
-}
-
-nav.theme-dark a#btn-cta:focus,
-nav.theme-dark a#btn-cta:hover,
-nav.theme-dark a#btn-cta:active {
-  color: var(--white-000);
-  background: linear-gradient(to right, #033331, #9a05df);
-  border-color: #ffffff;
-}
-
-/* Section 1: About me */
-.separator {
+/* Shape Dividers
+.custom-shape-divider-bottom-1680468722 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  background: linear-gradient(to right, black, #5E17EB);
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.separator h1 {
-  color: white;
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5rem 0;
-}
-.separator h1 span.highlight {
-  color: #FF00ED;
+.custom-shape-divider-bottom-1680468722 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
 }
 
-.section-selector-1 { background-color: var(--black-000) }
-.section-selector-1 .col-text p { color: white}
+.custom-shape-divider-bottom-1680468722 .shape-fill {
+  fill: #310350;
+}
+
+/* Who I am? 
+.section-selector-1 {
+  background-color: black;
+  position: relative;
+}
+
+.section-selector-1 .col-text p {
+  color: white
+} */
 
 /* Section 2: Portfolio*/
 
+.section-selector-1 {
+  background-color: #1f1f1f;
+  padding: 80px 0;
+}
 
-/* Section 3: Contact */
+.section-selector-1 h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-selector-1 p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section-selector-1 figure {
+  margin: 0;
+}
+
+.section-selector-1 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-shape-divider-bottom-1680468722 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680468722 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-bottom-1680468722 .shape-fill {
+  fill: #1f1f1f;
+}
+
+@media only screen and (min-width: 992px) {
+  .section-selector-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .section-selector-1 .col-2 {
+    flex-basis: 50%;
+    padding: 100px;
+  }
+
+  .section-selector-1 .col-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-selector-1 .col-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-shape-divider-bottom-1680468722 {
+    margin-top: -70px;
+  }
+}
+
+/* Contact */
 
 
 /* Footer */

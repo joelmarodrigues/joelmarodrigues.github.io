@@ -52,3 +52,18 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, newTextDelay + 250);
 });
+
+
+// Smooth scroll to section
+$(document).ready(function () {
+  $('a[href^="#"]').on('click', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate(
+      {
+        scrollTop: $($.attr(this, 'href')).offset().top,
+      },
+      800
+    );
+  });
+});
