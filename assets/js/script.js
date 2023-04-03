@@ -54,16 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Smooth scroll to section
-$(document).ready(function () {
-  $('a[href^="#"]').on('click', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate(
-      {
-        scrollTop: $($.attr(this, 'href')).offset().top,
-      },
-      800
-    );
-  });
-});
+// Portfolio Filter
