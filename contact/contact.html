@@ -11,7 +11,7 @@
 <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/css/lunevedy.css" />
     <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,15 +24,33 @@
 </head>
 
 <body>
-<header class="menu">
-  <nav class="navMenu">
-    <a href="../index.html">Home</a>
-    <a href="../about/about_me.html">About</a>
-    <a href="../portfolio/portfolio.html">Work</a>
-    <a href="#">Contact</a>
-    <div class="dot"></div>
+  <nav class="menu-sticky theme-dark custom-nav">
+    <div class="container-menu">
+      <a href="index.html" class="brand">
+        <img src="../assets/img/white_logo_resize.png" alt="Sample website logo">
+      </a>
+  
+      <div class="container-menu-links">
+        <div class="nav-toggle" id="nav-toggle-btn">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+  
+        <ul class="links-wrapper">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../store/store.html">Store</a></li>
+          <li>
+            <a class="btn btn-corn btn-outline" id="btn-cta" href="contact.html">
+              <span>Contact me</span> 
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
 
 <!-- Menu -->
 <main>
