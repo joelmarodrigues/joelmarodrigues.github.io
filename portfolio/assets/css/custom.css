@@ -1,0 +1,92 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* menu */
+nav.menu-sticky {
+  background-color: transparent;
+  transition: background-color 0.6s ease;
+}
+
+nav.menu-sticky.active {
+  background-color: #033331;
+}
+
+nav.menu-sticky.links-wrapper li a:hover {
+  color: #810179;
+  background-color: #000000;
+}
+
+/* Contact Button */
+nav.menu-stick nav.theme-dark a#btn-cta:link,
+nav.theme-dark a#btn-cta:visited {
+  color: var(--white-000);
+  background: transparent;
+  border-color: #ffffff;
+}
+
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active {
+  color: #033331;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn i {
+  transition: transform 0.5s ease;
+}
+
+.btn:hover i {
+  transform: rotate(90deg);
+}
+
+
+/* Section 2: Portfolio*/
+
+
+/* Contact */
+
+
+/* Footer */
+footer {
+  background-color:wheat;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-icons a {
+  color: #ffffff;
+}
+
+.privacy {
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.privacy a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Style the Font Awesome icons */
+.fab {
+  font-size: 24px;
+}
