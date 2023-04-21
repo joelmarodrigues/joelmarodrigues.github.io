@@ -13,28 +13,30 @@
 
     <style>
 
-        /* ============ Header Colours =============*/
+        /* ============ Header Colors =============*/
         header.hero-block-js { background-color: #f7df1e }
         header.hero-block-js h1 { color: #222 }
         header.hero-block-js h2 { color: var(--gray-700) }
 
-        /* Main Colours */
+        /* Main Colors */
 
         main {
-            background-image:#ff0000; background-image:
-            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),
-            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),
-            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),
-            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),
-            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),
-            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        background-image:
+            radial-gradient(at 40% 20%, #033331 0, transparent 50%),
+            radial-gradient(at 80% 0%, #9a05df 0, transparent 50%),
+            radial-gradient(at 0% 50%, #ffa500 0, transparent 50%),
+            radial-gradient(at 80% 50%, #008080 0, transparent 50%),
+            radial-gradient(at 0% 100%, #ff69b4 0, transparent 50%),
+            radial-gradient(at 80% 100%, #000080 0, transparent 50%),
+            radial-gradient(at 0% 0%, #033331 0, transparent 50%);
+            min-height: 60vh;
         }
+
         .theme-js .col-2 { background-color: var(--green-100) }
         .theme-js h3 { color: #222 }
         .theme-js p { color: #222 }
 
-        /* Button Colours: passive state */
+        /* Button Colors: passive state */
         .theme-js a.btn {
             color: #fff; background-color: blue; transition: 0.2s;
             border-radius: 6px
@@ -50,11 +52,11 @@
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
         }
 
         .bg-lightblue {
-            background-color: #9ae6b4;
+            background-color: lightblue;
             padding: 20px;
             width: 100%;
             max-width: 800px;
@@ -76,7 +78,7 @@
             display: block;
             padding: 18px 24px;
             border: 1px none #000;
-            background-color: blue;
+            background-color: darkblue;
             transition: all 350ms ease;
             color: #fff;
             font-size: 20px;
@@ -181,13 +183,17 @@ function calculateTip() {
 
    // Calculate tip
    let tipTotal = (billAmount * serviceQuality);
+   
    // round to two decimal places
    tipTotal = Math.round(tipTotal * 100) / 100;
+
    // next line allows us to always have two digits after decimal point
    tipTotal = tipTotal.toFixed(2);
+
    // Display the tip
    document.getElementById("tipDisplayBox").style.display = "block";
    document.getElementById("tipTotal").innerHTML = tipTotal;
+
    // Check to see if this input is empty or less than or equal to 1
    if (numOfPeople === "" || parseInt(numOfPeople) <= 1)  {
       numOfPeople = 1;

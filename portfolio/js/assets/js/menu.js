@@ -1,4 +1,4 @@
-// Check initial viepwort width
+// Check initial viewport width
 document.addEventListener("DOMContentLoaded", checkViewportWidth);
 
 function checkViewportWidth() {
@@ -17,7 +17,7 @@ function checkViewportWidth() {
     }
 }
 
-// Monitor viepwort width
+// Monitor viewport width
 window.onresize = checkViewportWidth;
 
 // Show/hide fly-out mobile menu
@@ -47,7 +47,7 @@ function toggleMobileMenu() {
     }
 }
 
-// On-scroll colours
+// On-scroll colors
 if (document.querySelector('.container-menu')) {
     window.onscroll = function() {swapMenuStyle()};
     const el_menu = document.querySelector('.container-menu');
