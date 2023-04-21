@@ -53,5 +53,3 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, newTextDelay + 250);
 });
 
-
-// Portfolio Filter
