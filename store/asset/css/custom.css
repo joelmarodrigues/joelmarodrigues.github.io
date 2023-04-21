@@ -3,34 +3,31 @@ body {
 }
 
 /* menu */
-nav.menu-sticky {
-  background-color: transparent;
+/* custom navigation store */
+nav.custom-nav {
+  background-color: #033331;
   transition: background-color 0.6s ease;
 }
 
-nav.menu-sticky.active {
-  background-color: #033331;
-}
-
-nav.menu-sticky.links-wrapper li a:hover {
+nav.custom-nav.links-wrapper li a:hover {
   color: #810179;
-  background-color: #000000;
 }
 
-/* Contact Button */
-nav.menu-stick nav.theme-dark a#btn-cta:link,
-nav.theme-dark a#btn-cta:visited {
+/* Contact Button Store*/
+nav.custom-nav a#btn-cta:link,
+nav.custom-nav a#btn-cta:visited {
   color: var(--white-000);
   background: transparent;
   border-color: #ffffff;
 }
 
-nav.theme-dark a#btn-cta:focus,
-nav.theme-dark a#btn-cta:hover,
-nav.theme-dark a#btn-cta:active {
-  color: #033331;
+nav.custom-nav a#btn-cta:focus,
+nav.custom-nav a#btn-cta:hover,
+nav.custom-nav a#btn-cta:active {
+  color: var(--white-000);
   background-color: #ffffff;
   border-color: #ffffff;
+  color:  #033331;
 }
 
 /* Contact */
@@ -38,7 +35,7 @@ nav.theme-dark a#btn-cta:active {
 
 /* Footer */
 footer {
-  background-color:wheat;
+  background-color: #033331;
   padding: 10px;
   text-align: center;
   font-size: 14px;
@@ -79,29 +76,3 @@ footer {
   font-size: 24px;
 }
 
-/* custom navigation store */
-nav.custom-nav {
-  background-color: #033331;
-  transition: background-color 0.6s ease;
-}
-
-nav.custom-nav.links-wrapper li a:hover {
-  color: #810179;
-}
-
-/* Contact Button Store*/
-nav.custom-nav a#btn-cta:link,
-nav.custom-nav a#btn-cta:visited {
-  color: var(--white-000);
-  background: transparent;
-  border-color: #ffffff;
-}
-
-nav.custom-nav a#btn-cta:focus,
-nav.custom-nav a#btn-cta:hover,
-nav.custom-nav a#btn-cta:active {
-  color: var(--white-000);
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color:  #033331;
-}
