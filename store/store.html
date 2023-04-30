@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joelma Rodrigues | Store</title>
-    <meta name="description" content="I create digital experiences to promote products, services and events." />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="asset/css/custom.css" />
 
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,59 +17,223 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png" />
     <link rel="manifest" href="../assets/img/site.webmanifest" />
 
     <!-- Font Awesome 6 icons. Delete if not using. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        header.theme-light h1 {
+            color: black;
+            font-size: 46px;
+        }
+
+        header.theme-light h2 {
+            color: grey;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        nav.theme-light,
+        nav.theme-light ul.links-wrapper.active {
+            background-color:  #033331;
+        }
+
+        nav.theme-light a#btn-cta:link,
+        nav.theme-light a#btn-cta:visited {
+            color: var(--white-000)
+        }
+
+        nav.theme-light a#btn-cta:link,
+        nav.theme-light a#btn-cta:visited {
+            border-color: var(--white-000)
+        }
+
+        nav.theme-light a#btn-cta:focus,
+        nav.theme-light a#btn-cta:hover,
+        nav.theme-light a#btn-cta:active {
+            border-color: var(--white-000)
+        }
+
+        nav.theme-light a#btn-cta:focus,
+        nav.theme-light a#btn-cta:hover,
+        nav.theme-light a#btn-cta:active {
+            color: var(--teal-900)
+        }
+
+        nav.theme-light a#btn-cta:focus,
+        nav.theme-light a#btn-cta:hover,
+        nav.theme-light a#btn-cta:active {
+            background-color: var(--white-000)
+        }
+
+        nav.theme-light ul.links-wrapper li a:link,
+        nav.theme-light ul.links-wrapper li a:visited {
+            color: var(--white-000)
+        }
+
+        nav.theme-light ul.links-wrapper li a:focus,
+        nav.theme-light ul.links-wrapper li a:hover,
+        nav.theme-light ul.links-wrapper li a:active {
+            color: var(--white-000)
+        }
+
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+            background-color: var(--white-000)
+        }
+
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+        nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+            background-color: var(--white-000)
+        }
+
+        header.theme-light .badge {
+            background-color: #033331;
+        }
+
+        header.theme-light .badge {
+            color:  white;
+        }
+
+
+        /* Hero */
+
+
+
+        /* Footer */
+        footer.theme-dark {
+            background-color: #033331
+        }
+
+        footer.theme-dark .col-3 h2 {
+            color: var(--white-000)
+        }
+
+        footer.theme-dark .col-3 p {
+            color: var(--slate-100)
+        }
+
+        footer.theme-dark .col-3 ul li address {
+            color: var(--white-000)
+        }
+
+        footer.theme-dark .col-3 h3 {
+            color: var(--white-000);
+            font-weight: bold;
+        }
+
+        footer.theme-dark .copyright p {
+            color: var(--white-000);
+            text-align: center;
+            font-size: medium;
+        }
+
+        footer.theme-dark .copyright {
+            background-color: var(--teal-900)
+        }
+
+        footer.theme-dark ul.footer-links li a:link,
+        footer.theme-dark ul.footer-links li a:visited {
+            text-decoration-color: transparent
+        }
+
+        footer.theme-dark ul.footer-links li a:focus,
+        footer.theme-dark ul.footer-links li a:hover,
+        footer.theme-dark ul.footer-links li a:active {
+            text-decoration-color: transparent
+        }
+
+        footer.theme-dark ul.footer-links li a:link,
+        footer.theme-dark ul.footer-links li a:visited {
+            color: var(--white-000)
+        }
+
+        footer.theme-dark ul.footer-links li a:focus,
+        footer.theme-dark ul.footer-links li a:hover,
+        footer.theme-dark ul.footer-links li a:active {
+            color: var(--teal-300)
+        }
+
+        footer.theme-dark ul.footer-icons li a:link i,
+        footer.theme-dark ul.footer-icons li a:visited i {
+            color: var(--white-000)
+        }
+
+        footer.theme-dark ul.footer-links li .fa-li i {
+            color: var(--white-000)
+        }
+
+        footer.theme-dark ul.footer-icons li a:focus i,
+        footer.theme-dark ul.footer-icons li a:hover i,
+        footer.theme-dark ul.footer-icons li a:active i {
+            color: var(--teal-700)
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="menu-sticky theme-dark custom-nav">
-        <div class="container-menu">
-          <a href="../index.html" class="brand">
-            <img src="../assets/img/white_logo_resize.png" alt="Sample website logo">
-          </a>
-      
-          <div class="container-menu-links">
-            <div class="nav-toggle" id="nav-toggle-btn">
-              <div class="bar-1"></div>
-              <div class="bar-2"></div>
-              <div class="bar-3"></div>
-            </div>
-      
-            <ul class="links-wrapper">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
-              <li><a href="store.html">Store</a></li>
-              <li>
-                <a class="btn btn-corn btn-outline" id="btn-cta" href="../contact/contact.html">
-                  <span>Contact me</span> 
-                  <i class="fa-solid fa-chevron-right"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-    <header class="theme-light text-center-mobile">
+    <!--navbar menu begins here-->
+    <nav class="theme-light">
+        <div class="container-menu menu-desktop">
+            <a href="../index.html" class="brand">
+                <img src="../assets/img/white_logo_resize.png" alt="Sample website logo">
+            </a>
+
+            <div class="container-menu-links">
+
+                <!-- hamburger icon -->
+                <div class="nav-toggle" id="nav-toggle-btn">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <!-- List of links -->
+                <ul class="links-wrapper">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="../contact/contact.html"><span>Contact me</span>
+                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+
+            </div><!-- closes container-menu-links -->
+        </div><!-- closes container-menu -->
+    </nav>
+    <!-- navbar menu ends here -->
+
+    <!-- header starts here -->
+    <header class="theme-light text-center-desktop text-center-mobile">
 
         <div class="container-text">
-            <h1>Store</h1>
-        </div>
-    </header>
-    <main>
-        <section class="theme-light section-selector-store custom-store">
+            <div class="badge">STORE</div>
 
-            <div class="col-1 text-center w-820px">
-                <h2>Welcome to my world of hobbies!</h2>
-                <h3>When I'm not busy coding away, I've put together a collection of my hobbies to share with you, not because I'm a seller, but because I'm passionate about what I do. So take a look around, and if something piques your interest, feel free to follow the links to learn more. Who knows? Maybe we'll discover a new hobby together!</h3>
-            </div>
+            <h1 class="">Welcome to my world of hobbies!</h1>
+
+            <h2>When I'm not busy coding away, I've put together a collection of my hobbies to share with you, not
+                because I'm a seller, but because I'm passionate about what I do. So take a look around, and if
+                something piques your interest, feel free to follow the links to learn more. Who knows? Maybe we'll
+                discover a new hobby together!</h2>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="theme-light section-selector-store custom-store">
 
             <!-- Rubik's Cube -->
             <div class="flex-cols-3">
@@ -88,7 +250,8 @@
                         began to melt away. But soon, what started as a simple distraction became a full-blown addiction
                         as I pushed myself to solve the cube faster and faster.</p>
                     <a href="https://www.amazon.co.uk/Coolzon-Pyraminx-Megaminx-Stickerless-Christmas/dp/B07XNXKFW6/ref=sxin_16_ac_d_rm?ac_md=3-3-cnViaWtzIGN1YmUgc2V0-ac_d_rm_rm_rm&amp;content-id=amzn1.sym.140c8172-2a1e-4c98-8c19-f39e43944b09%253Aamzn1.sym.140c8172-2a1e-4c98-8c19-f39e43944b09&amp;crid=1L9UOQ2MKH64L&amp;cv_ct_cx=rubiks+cube&amp;keywords=rubiks+cube&amp;pd_rd_i=B07XNXKFW6&amp;pd_rd_r=fb7379a3-8eab-4371-81a3-776b2ae45d1b&amp;pd_rd_w=r9gxA&amp;pd_rd_wg=nOHbg&amp;pf_rd_p=140c8172-2a1e-4c98-8c19-f39e43944b09&amp;pf_rd_r=93Y0BVVRNP36GJ9EYVTK&amp;qid=1681817518&amp;sbo=RZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D&amp;sprefix=rubik%252Caps%252C67&amp;sr=1-4-e2b79f78-a3a0-4cac-b70d-2a5e4ae8e724&_encoding=UTF8&tag=portfoliostor-21&linkCode=ur2&linkId=0c8496d2711d62c8931874522111f1ba&camp=1634&creative=6738"
-                        class="btn btn-soft btn-outline btn-block"><i class="fas fa-shopping-cart"></i><span>Get your first Rubik's Cube here!</span></a>
+                        class="btn btn-soft btn-outline btn-block"><i class="fas fa-shopping-cart"></i><span>Get your
+                            first Rubik's Cube!</span></a>
                 </div>
 
                 <!-- Reading -->
@@ -104,17 +267,23 @@
                         Suassuna and Clarice Lispector. But sometimes, I find myself falling in love with books that are
                         completely different from what I'm used to.</p>
                     <a href="https://www.amazon.co.uk/gp/search?ie=UTF8&tag=portfoliostor-21&linkCode=ur2&linkId=3c1475a57fc4c6b99b73c554cd5b5caf&camp=1634&creative=6738&index=books&keywords=Clarice Lispector"
-                        class="btn btn-soft btn-outline btn-block"><i class="fas fa-shopping-cart"></i><span>Check out my book recommendations</span></a>
+                        class="btn btn-soft btn-outline btn-block"><i class="fas fa-shopping-cart"></i><span>Check out
+                            my book list</span></a>
                 </div>
                 <!-- Sport -->
                 <div class="col-3">
                     <figure class="fig-corners-soft">
                         <a
                             href="https://www.amazon.co.uk/Clash-of-Rivals/dp/B08BYYQTVC/ref=sr_1_5?crid=7863PIX3YIN8&amp;keywords=futball&amp;qid=1681822827&amp;s=instant-video&amp;sprefix=futball+%252Cinstant-video%252C71&amp;sr=1-5&_encoding=UTF8&tag=portfoliostor-21&linkCode=ur2&linkId=eb3cf2586064b9f883edd282c9686cb4&camp=1634&creative=6738"><img
-                                src= "asset/img/All_or_Nothing_Brazil_National_Team.jpg" alt="" style="border:none !important; margin:0px !important;"alt="Placeholder image"></a>
+                                src="asset/img/All_or_Nothing_Brazil_National_Team.jpg" alt=""
+                                style="border:none !important; margin:0px !important;" alt="Placeholder image"></a>
                     </figure>
                     <h3>Sports</h3>
-                    <p>Whether I'm playing or watching, football and volleyball are my favourite sports.  Lately, I've also discovered a newfound love for basketball, I can't get enough of the action and excitement. There's something about the competitive spirit of sports that just speaks to me. It's a thrill to see athletes pushing themselves to be their best, and I love being a part of that energy.  </p>
+                    <p>Whether I'm playing or watching, football and volleyball are my favourite sports. Lately, I've
+                        also discovered a newfound love for basketball, I can't get enough of the action and excitement.
+                        There's something about the competitive spirit of sports that just speaks to me. It's a thrill
+                        to see athletes pushing themselves to be their best, and I love being a part of that energy.
+                    </p>
                     <a href="https://www.amazon.co.uk/Clash-of-Rivals/dp/B08BYYQTVC/ref=sr_1_5?crid=7863PIX3YIN8&amp;keywords=futball&amp;qid=1681822827&amp;s=instant-video&amp;sprefix=futball+%252Cinstant-video%252C71&amp;sr=1-5&_encoding=UTF8&tag=portfoliostor-21&linkCode=ur2&linkId=eb3cf2586064b9f883edd282c9686cb4&camp=1634&creative=6738"
                         class="btn btn-soft btn-outline btn-block"><i class="fas fa-shopping-cart"></i><span>Watch
                             now</span></a>
@@ -125,13 +294,67 @@
 
     </main>
 
-    <!-- footer -->
-    <footer></footer>
+    <!-- footer starts here -->
+    <footer class="theme-dark footer-3">
+
+        <!-- Begin four-column flexbox grid -->
+        <div class="footer-cols-3 w-1356px footer-h3-weight-400">
+
+            <div class="col-3">
+                <a href="index.html" class="brand">
+                    <img src="../assets/img/joelma-rodrigues-website-favicon-white.png" alt="Sample website logo"
+                        style=" width: auto; height: auto;">
+                </a>
+
+                <h2>Joelma Rodrigues</h2>
+                <p>Explore my coding playground and see the web come to life.</p>
+                <ul class="footer-icons">
+                    <li><a href="https://github.com/joelmarodrigues"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/joelma-rodrigues-510402256/"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-3">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../contact/contact.html">Get in touch</a></li>
+                    <li><a href="../index.html#about-me">About me</a></li>
+                    <li><a href="../privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <h3>Contact</h3>
+                <ul class="fa-ul footer-links">
+                    <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
+                        <address>21B Long Mile Road, Ballybruscar,<br>Ireland. Z23 A99.</address>
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <a
+                            href="tel:123-456-7890">123-456-7890</a>
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <a
+                            href="#">24130@student.dorset-college.ie</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End three-column flexbox grid -->
+
+
+        <div class="copyright">
+            <p>Copyright © 2023 Joelma Rodrigues. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
 
     <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
 </html>
 
-    <!-- Images: https://www.pexels.com/ --> 
+<!-- Images: https://www.pexels.com/ -->
