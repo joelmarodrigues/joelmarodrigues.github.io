@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Joelma Rodrigues | Portfolio</title>
 	<meta name="description" content="My Portfolio.">
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
 
 	<!-- Stylesheets -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,9 +18,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
 
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png" />
 	<link rel="manifest" href="../assets/img/site.webmanifest" />
 
 	<!-- Font Awesome 6 icons. Delete if not using. -->
@@ -28,130 +28,518 @@
 		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+	<!-- Custom CSS -->
+	<style>
+		body {
+			font-family: "Montserrat", sans-serif;
+		}
+
+		nav.theme-light,
+		nav.theme-light ul.links-wrapper.active {
+			background-color: #033331;
+		}
+
+		nav.theme-light a#btn-cta:link,
+		nav.theme-light a#btn-cta:visited {
+			color: var(--white-000)
+		}
+
+		nav.theme-light a#btn-cta:link,
+		nav.theme-light a#btn-cta:visited {
+			border-color: var(--white-000)
+		}
+
+		nav.theme-light a#btn-cta:focus,
+		nav.theme-light a#btn-cta:hover,
+		nav.theme-light a#btn-cta:active {
+			border-color: var(--white-000)
+		}
+
+		nav.theme-light a#btn-cta:focus,
+		nav.theme-light a#btn-cta:hover,
+		nav.theme-light a#btn-cta:active {
+			color: var(--teal-900)
+		}
+
+		nav.theme-light a#btn-cta:focus,
+		nav.theme-light a#btn-cta:hover,
+		nav.theme-light a#btn-cta:active {
+			background-color: var(--white-000)
+		}
+
+		nav.theme-light ul.links-wrapper li a:link,
+		nav.theme-light ul.links-wrapper li a:visited {
+			color: var(--white-000)
+		}
+
+		nav.theme-light ul.links-wrapper li a:focus,
+		nav.theme-light ul.links-wrapper li a:hover,
+		nav.theme-light ul.links-wrapper li a:active {
+			color: var(--white-000)
+		}
+
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+			background-color: var(--white-000)
+		}
+
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+		nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+			background-color: var(--white-000)
+		}
+
+		/* Body */
+		header {
+			background-image: #ff0000;
+			background-image:
+				radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0, transparent 50%),
+				radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0, transparent 50%),
+				radial-gradient(at 0% 50%, hsla(355, 85%, 93%, 1) 0, transparent 50%),
+				radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0, transparent 50%),
+				radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0, transparent 50%),
+				radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0, transparent 50%),
+				radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0, transparent 50%);
+			min-height: 30vh;
+			color: #fff;
+			text-align: center;
+		}
+
+		#filter-bar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 50px;
+		}
+
+		.filter-button {
+			background-color: #fff;
+			border: 2px solid #033331;
+			color: #033331;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 5px 20px;
+			margin: 0 10px;
+			cursor: pointer;
+		}
+
+		.filter-button:hover {
+			background-color: #033331;
+			color: #fff;
+		}
+
+		.project a.btn:link,
+		.project a.btn:visited {
+			background-color: var(--teal-800)
+		}
+
+		.project a.btn:link,
+		.project a.btn:visited {
+			border-color: var(--teal-800)
+		}
+
+		.project a.btn:focus,
+		.project a.btn:hover,
+		.project a.btn:active {
+			border-color: var(--teal-800)
+		}
+
+		.project a.btn:focus,
+		.project a.btn:hover,
+		.project a.btn:active {
+			color: var(--teal-800)
+		}
+
+		.project a.btn:focus,
+		.project a.btn:hover,
+		.project a.btn:active {
+			background-color: var(--white-000)
+		}
+
+		.project .col-4 h3 {
+			color: var(--green-900)
+		}
+
+		.project.theme-light .cols-shadows .col-4 {
+			box-shadow: rgba(0, 0, 0, 0.2) 7px 7px 7px 0px
+		}
+
+		.project.theme-light .cols-background .col-4 {
+			background-color: var(--white-000)
+		}
+
+
+		/* Footer */
+		footer.theme-dark {
+			background-color: #033331;
+		}
+
+		footer.theme-dark .col-3 h2 {
+			color: var(--white-000)
+		}
+
+		footer.theme-dark .col-3 p {
+			color: var(--slate-100)
+		}
+
+		footer.theme-dark .col-3 ul li address {
+			color: var(--white-000)
+		}
+
+		footer.theme-dark .col-3 h3 {
+			color: var(--white-000);
+			font-weight: bold;
+		}
+
+		footer.theme-dark .copyright p {
+			color: var(--white-000);
+			text-align: center;
+			font-size: medium;
+		}
+
+		footer.theme-dark .copyright {
+			background-color: var(--teal-900)
+		}
+
+		footer.theme-dark ul.footer-links li a:link,
+		footer.theme-dark ul.footer-links li a:visited {
+			text-decoration-color: transparent
+		}
+
+		footer.theme-dark ul.footer-links li a:focus,
+		footer.theme-dark ul.footer-links li a:hover,
+		footer.theme-dark ul.footer-links li a:active {
+			text-decoration-color: transparent
+		}
+
+		footer.theme-dark ul.footer-links li a:link,
+		footer.theme-dark ul.footer-links li a:visited {
+			color: var(--white-000)
+		}
+
+		footer.theme-dark ul.footer-links li a:focus,
+		footer.theme-dark ul.footer-links li a:hover,
+		footer.theme-dark ul.footer-links li a:active {
+			color: var(--teal-300)
+		}
+
+		footer.theme-dark ul.footer-icons li a:link i,
+		footer.theme-dark ul.footer-icons li a:visited i {
+			color: var(--white-000)
+		}
+
+		footer.theme-dark ul.footer-links li .fa-li i {
+			color: var(--white-000)
+		}
+
+		footer.theme-dark ul.footer-icons li a:focus i,
+		footer.theme-dark ul.footer-icons li a:hover i,
+		footer.theme-dark ul.footer-icons li a:active i {
+			color: var(--teal-700)
+		}
+	</style>
+
 </head>
 
 <body>
-	<nav class="menu-sticky custom-nav">
-		<div class="container-menu">
+	<nav class="theme-light">
+		<div class="container-menu menu-desktop">
 			<a href="../index.html" class="brand">
 				<img src="../assets/img/white_logo_resize.png" alt="Sample website logo">
 			</a>
 
 			<div class="container-menu-links">
+
+				<!-- hamburger icon -->
 				<div class="nav-toggle" id="nav-toggle-btn">
 					<div class="bar-1"></div>
 					<div class="bar-2"></div>
 					<div class="bar-3"></div>
 				</div>
 
+				<!-- List of links -->
 				<ul class="links-wrapper">
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="../store/store.html">Store</a></li>
 					<li>
-						<a class="btn btn-corn btn-outline" id="btn-cta" href="../contact/contact.html">
-							<span>Contact me</span>
-							<i class="fa-solid fa-chevron-right"></i>
-						</a>
-					</li>
+					<li><a class="btn btn-outline" id="btn-cta" href="../contact/contact.html"><span>Contact me</span>
+							<i class="fa-solid fa-chevron-right"></i></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- Menu -->
+
 	<main>
-		<!-- section starts here -->
-		<section class="theme-light section-selector-3">
-			<div class="col-1 text-center col-1-width-960px">
+		<header>
+			<div class="col-1 text-center portfolio-background">
 				<h2 class="heading">Portfolio</h2>
 				<h3>Below you can see a selection of my web design and front-end development work.</h3>
-				<a href="js/index.html">Store</a>
 			</div>
-			<!-- Begin three-column flexbox grid -->
-			<div class="flex-cols-3 cols-background cols-padding cols-corners-soft text-center cols-shadows">
+		</header>
 
-				<div class="col-3">
-					<figure>
-						<img src="assets/img/project-smoothie.jpg" alt="Placeholder image">
+		<div id="filter-bar">
+			<button class="filter-button" data-category="all">All</button>
+			<button class="filter-button" data-category="html-css">HTML/CSS</button>
+			<button class="filter-button" data-category="javascript">JavaScript</button>
+		</div>
+
+		<!-- section starts here -->
+		<section class="theme-light section-selector-1 w-1600px">
+			<div class="flex-cols-4 rows-gap-4 cols-gap-2 cols-padding cols-shadows cols-background">
+				
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/weather.png" alt="Placeholder image">
 					</figure>
-					<h3>Smooth Smoothies</h3>
-					<p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
-					<a href="smoothies/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
-							Project</span><i class="fas fa-arrow-right"></i></a>
+					<h3>Weather for Dublin</h3>
+					<p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+					<br></br>
+					<div class="container-btn"><a href="js/weather/weather.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
 				</div>
 
-				<div class="col-3">
+				<div class="project col-4" data-category="html-css">
 					<figure>
 						<img src="assets/img/project-fashion.jpg" alt="Placeholder image">
 					</figure>
 					<h3>Snazzy Fashion</h3>
 					<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
-					<a href="fashion/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
+					<br></br>
+					<a href="fashion/index.html" class="btn btn-solid btn-block btn-small btn-soft"><span>View
 							Project</span><i class="fas fa-arrow-right"></i></a>
 				</div>
 
-				<div class="col-3">
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/movie.png" alt="Placeholder image">
+					</figure>
+					<h3>Movies Listing</h3>
+					<p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet
+						Movie Database.</p><br></br>
+					<div class="container-btn"><a href="js/movies/movies.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="html-css">
 					<figure>
 						<img src="assets/img/project-hero.png" alt="Placeholder image">
 					</figure>
 					<h3>Hero Block Gallery</h3>
-					<p>A gallery of hero block elements with split-screen layouts and duotone images.
-					</p>
-					<a href="project-hero/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
+					<p>A gallery of hero block elements with split-screen layouts and duotone images.</p><br></br>
+					<a href="project-hero/index.html" class="btn btn-solid btn-block btn-small btn-soft"><span>View
 							Project</span><i class="fas fa-arrow-right"></i></a>
 				</div>
 
-				<div class="col-3">
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/tip_calculator.png" alt="Placeholder image">
+					</figure>
+					<h3>Tip Calculator</h3>
+					<p>Calculates the tip for a restaurant bill based on the level of service and the number of
+						customers.</p><br></br>
+					<div class="container-btn"><a href="js/tip-calculator/tip-calculator.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="html-css">
 					<figure>
 						<img src="assets/img/project-van-gogh.png" alt="Placeholder image">
 					</figure>
 					<h3>Vincent van Gogh</h3>
-					<p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video
-						from YouTube.</p>
-					<a href="van-gogh/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
+					<p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive
+						video fromm YouTube.</p><br></br>
+					<a href="van-gogh/index.html" class="btn btn-solid btn-block btn-small btn-soft"><span>View
+							Project</span><i class="fas fa-arrow-right"></i></a>
+				</div>
+				<div class="project col-4" data-category="html-css">
+					<figure>
+						<img src="assets/img/project-smoothie.jpg" alt="Placeholder image">
+					</figure>
+					<h3>Smooth Smoothies</h3>
+					<p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p><br></br>
+					<a href="smoothies/index.html" class="btn btn-solid btn-block btn-small btn-soft"><span>View
 							Project</span><i class="fas fa-arrow-right"></i></a>
 				</div>
 
-				<div class="col-3">
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/image-slideshow.png" alt="Placeholder image">
+					</figure>
+					<h3>Image Slideshow</h3>
+					<p>A slideshow with an array of images from Dublin city, Ireland.</p><br></br>
+					<div class="container-btn">
+						<a href="js/image-slideshow/image-slideshow.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a>
+					</div>
+				</div>
+
+				<div class="project col-4" data-category="html-css">
 					<figure>
 						<img src="assets/img/project-multi-col.png" alt="Placeholder image">
 					</figure>
 					<h3>Multi-column Layout</h3>
 					<p>A gallery of multi-column, responsive layouts.</p><br></br>
-					<a href="project-multi-column/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
+					<a href="project-multi-column/index.html"
+						class="btn btn-solid btn-block btn-small btn-soft"><span>View
 							Project</span><i class="fas fa-arrow-right"></i></a>
 				</div>
 
-				<div class="col-3">
+				<div class="project col-4" data-category="html-css">
 					<figure>
 						<img src="assets/img/project-crypto-wallet.jpg" alt="Placeholder image">
 					</figure>
 					<h3>Crypto Wallet</h3>
 					<p>A dark-themed responsive single-page website for a fictitious crypto wallet.</p><br></br>
-					<a href="crypto-wallet/index.html" class="btn btn-pill btn-solid btn-shadow"><span>View
+					<a href="crypto-wallet/index.html" class="btn btn-solid btn-block btn-small btn-soft"><span>View
 							Project</span><i class="fas fa-arrow-right"></i></a>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/data-tables.png" alt="Placeholder image">
+					</figure>
+					<h3>Data Tables</h3>
+					<p>Populates an HTML table with data stored in an array. Includes the option to remove data items.
+					</p><br></br>
+					<div class="container-btn"><a href="js/data-tables/data-tables.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/quotes.png" alt="Placeholder image">
+					</figure>
+					<h3>Random Quotes Generator</h3>
+					<p>Uses the Fetch API to retrieve a randomly-chosen selection of ten inspiring quotations.</p>
+					<br></br>
+					<div class="container-btn"> <a href="js/quotes/quotes.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/calculator-module.png" alt="Placeholder image">
+					</figure>
+					<h3>Calculator with Modules</h3>
+					<p>A basic calculator that uses export/import statements to share code with a JavaScript module
+						file.</p><br></br>
+					<div class="container-btn"><a href="js/calculator-modules/calculator-modules.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/image-blur-filter.png" alt="Placeholder image">
+					</figure>
+					<h3>Image Blue Filter</h3>
+					<p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an
+						image.</p><br></br>
+					<div class="container-btn"> <a href="js/image-blur-filter/image-blur-filter.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/counter.png" alt="Placeholder image">
+					</figure>
+					<h3>Counter</h3>
+					<p>An increment and decrement counter that changes the colour of the number displayed on the web
+						page.</p><br></br>
+					<div class="container-btn"><a href="js/counter/counter.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
+				</div>
+
+				<div class="project col-4" data-category="javascript">
+					<figure><img src="js/assets/img/colour.png" alt="Placeholder image">
+					</figure>
+					<h3>Random Color Generator</h3>
+					<p>Uses an array of hexadecimal values to randomly generate a background color for the web page.</p>
+					<br></br>
+					<div class="container-btn"><a href="js/colours/colours.html"
+							class="btn btn-solid btn-block btn-small btn-soft"><span>View project</span> <i
+								class="fa-solid fa-arrow-right"></i></a></div>
 				</div>
 			</div>
 		</section>
-
 	</main>
 
-	<!-- footer -->
-	<footer class="theme-dark text-center-desktop text-center-mobile">
-		<ul class="footer-icons">
-			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/24130JoelmaR/24130joelmar.github.io/" target="_blank"><i
-						class="fab fa-github-square"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-		</ul>
+	<!-- JS -->
+	<script>
+		// Get the filter buttons and project items
+		const filterButtons = document.querySelectorAll('.filter-button');
+		const projects = document.querySelectorAll('.project');
 
-		<p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+		// Add event listeners to filter buttons
+		filterButtons.forEach((button) => {
+			button.addEventListener('click', (event) => {
+				// Get the selected category
+				const category = event.target.dataset.category;
+
+				// Filter projects based on category
+				projects.forEach((project) => {
+					if (category === 'all') {
+						project.style.display = 'block';
+					} else if (project.dataset.category === category) {
+						project.style.display = 'block';
+					} else {
+						project.style.display = 'none';
+					}
+				});
+			});
+		});
+
+	</script>
+
+	<!-- footer starts here -->
+	<footer class="theme-dark footer-3">
+		<div class="footer-cols-3 w-1356px footer-h3-weight-400">
+			<div class="col-3">
+				<a href="index.html" class="brand">
+					<img src="../assets/img/joelma-rodrigues-website-favicon-white.png" alt="Sample website logo"
+						style=" width: auto; height: auto;">
+				</a>
+				<h2>Joelma Rodrigues</h2>
+				<p>Explore my coding playground and see the web come to life.</p>
+				<ul class="footer-icons">
+					<li><a href="https://github.com/joelmarodrigues"><i class="fa-brands fa-github"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/joelma-rodrigues-510402256/"><i
+								class="fa-brands fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-3">
+				<h3>Links</h3>
+				<ul class="footer-links">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../contact/contact.html">Get in touch</a></li>
+					<li><a href="../index.html#about-me">About me</a></li>
+					<li><a href="../privacy.html">Privacy</a></li>
+				</ul>
+			</div>
+			<div class="col-3">
+				<h3>Contact</h3>
+				<ul class="fa-ul footer-links">
+					<li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
+						<address>21B Long Mile Road, Ballybruscar,<br>Ireland. Z23 A99.</address>
+					</li>
+					<li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <a
+							href="tel:123-456-7890">123-456-7890</a>
+					</li>
+					<li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <a
+							href="#">24130@student.dorset-college.ie</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>Copyright © 2023 Joelma Rodrigues. All rights reserved.</p>
+		</div>
 	</footer>
+	<!-- footer ends here -->
 
-	<!-- section ends here -->
 	<script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
-	<script src="assets/js/script.js"></script>
+	<script src="../assets/js/script.js"></script>
 
 </body>
 
