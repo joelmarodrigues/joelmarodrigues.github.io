@@ -1,121 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joelma Rodrigues | Contact</title>
-    <meta name="description" content="Contact Me">
-<!-- Preload large image -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joelma Rodrigues | Contact</title>
+  <meta name="description" content="Contact Me">
 
-<!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/lunevedy.css" />
-    <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
 
-   <!-- Font Awesome 6 icons. Delete if not using. -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png" />
+  <link rel="manifest" href="../assets/img/site.webmanifest" />
 
+  <!-- Font Awesome 6 icons. Delete if not using. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    header.theme-light h1 {
+      color: black;
+      font-size: 46px;
+    }
+
+    header.theme-light h2 {
+      color: grey;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    nav.theme-light,
+    nav.theme-light ul.links-wrapper.active {
+      background-color: #033331;
+    }
+
+    nav.theme-light a#btn-cta:link,
+    nav.theme-light a#btn-cta:visited {
+      color: var(--white-000)
+    }
+
+    nav.theme-light a#btn-cta:link,
+    nav.theme-light a#btn-cta:visited {
+      border-color: var(--white-000)
+    }
+
+    nav.theme-light a#btn-cta:focus,
+    nav.theme-light a#btn-cta:hover,
+    nav.theme-light a#btn-cta:active {
+      border-color: var(--white-000)
+    }
+
+    nav.theme-light a#btn-cta:focus,
+    nav.theme-light a#btn-cta:hover,
+    nav.theme-light a#btn-cta:active {
+      color: var(--teal-900)
+    }
+
+    nav.theme-light a#btn-cta:focus,
+    nav.theme-light a#btn-cta:hover,
+    nav.theme-light a#btn-cta:active {
+      background-color: var(--white-000)
+    }
+
+    nav.theme-light ul.links-wrapper li a:link,
+    nav.theme-light ul.links-wrapper li a:visited {
+      color: var(--white-000)
+    }
+
+    nav.theme-light ul.links-wrapper li a:focus,
+    nav.theme-light ul.links-wrapper li a:hover,
+    nav.theme-light ul.links-wrapper li a:active {
+      color: var(--white-000)
+    }
+
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+      background-color: var(--white-000)
+    }
+
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+    nav.theme-light.menu-sticky.menu-on-scroll .nav-toggle .bar-3 {
+      background-color: var(--white-000)
+    }
+
+    /* Body */
+    section.theme-light {
+      background-color: white;
+    }
+
+    section.theme-light h2 {
+      color: #033331;
+    }
+
+    section.theme-light p {
+      color: #033331;
+    }
+
+    .contact-form-upper h2 {
+      color: #033331;
+    }
+    .theme-light.section-selector-4 {
+    margin-bottom: -100px;
+    }
+
+
+    form#contact-form input[type="text"],
+    form#contact-form input[type="email"],
+    form#contact-form textarea {
+      color: black;
+      border: 2px solid #033331;
+    }
+
+
+    form#contact-form button#btn-submit {
+      background-color: #033331;
+    }
+
+    form#contact-form button#btn-submit:hover {
+      background-color: #077c78;
+      color: white;
+      border-color: white;
+    }
+
+    /* Footer */
+    footer.theme-dark {
+      background-color: #033331;
+    }
+
+    footer.theme-dark .col-3 h2 {
+      color: var(--white-000)
+    }
+
+    footer.theme-dark .col-3 p {
+      color: var(--slate-100)
+    }
+
+    footer.theme-dark .col-3 ul li address {
+      color: var(--white-000)
+    }
+
+    footer.theme-dark .col-3 h3 {
+      color: var(--white-000);
+      font-weight: bold;
+    }
+
+    footer.theme-dark .copyright p {
+      color: var(--white-000);
+      text-align: center;
+      font-size: medium;
+    }
+
+    footer.theme-dark .copyright {
+      background-color: var(--teal-900)
+    }
+
+    footer.theme-dark ul.footer-links li a:link,
+    footer.theme-dark ul.footer-links li a:visited {
+      text-decoration-color: transparent
+    }
+
+    footer.theme-dark ul.footer-links li a:focus,
+    footer.theme-dark ul.footer-links li a:hover,
+    footer.theme-dark ul.footer-links li a:active {
+      text-decoration-color: transparent
+    }
+
+    footer.theme-dark ul.footer-links li a:link,
+    footer.theme-dark ul.footer-links li a:visited {
+      color: var(--white-000)
+    }
+
+    footer.theme-dark ul.footer-links li a:focus,
+    footer.theme-dark ul.footer-links li a:hover,
+    footer.theme-dark ul.footer-links li a:active {
+      color: var(--teal-300)
+    }
+
+    footer.theme-dark ul.footer-icons li a:link i,
+    footer.theme-dark ul.footer-icons li a:visited i {
+      color: var(--white-000)
+    }
+
+    footer.theme-dark ul.footer-links li .fa-li i {
+      color: var(--white-000)
+    }
+
+    footer.theme-dark ul.footer-icons li a:focus i,
+    footer.theme-dark ul.footer-icons li a:hover i,
+    footer.theme-dark ul.footer-icons li a:active i {
+      color: var(--teal-700)
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="menu-sticky theme-dark custom-nav">
-    <div class="container-menu">
-      <a href="index.html" class="brand">
+  <!--navbar menu begins here-->
+  <nav class="theme-light">
+    <div class="container-menu menu-desktop">
+      <a href="../index.html" class="brand">
         <img src="../assets/img/white_logo_resize.png" alt="Sample website logo">
       </a>
-  
+
       <div class="container-menu-links">
+
+        <!-- hamburger icon -->
         <div class="nav-toggle" id="nav-toggle-btn">
           <div class="bar-1"></div>
           <div class="bar-2"></div>
           <div class="bar-3"></div>
         </div>
-  
+
+        <!-- List of links -->
         <ul class="links-wrapper">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="../store/store.html">Store</a></li>
           <li>
-            <a class="btn btn-corn btn-outline" id="btn-cta" href="contact.html">
-              <span>Contact me</span> 
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </li>
+          <li><a class="btn btn-outline" id="btn-cta" href="contact.html"><span>Contact me</span>
+              <i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
-      </div>
-    </div>
+
+      </div><!-- closes container-menu-links -->
+    </div><!-- closes container-menu -->
   </nav>
+  <!-- navbar menu ends here -->
 
-<!-- Menu -->
-<main>
-    <!-- section 4 -->
+  <!-- Menu -->
+  <main>
+
     <section class="theme-light w-800px section-selector-4 text-center-desktop text-center-mobile">
-        <h2>Get <span class="highlight">in</span> touch!</h2>
-        <p>Have a project you'd like to discuss? Let's make something great together!</p>
-        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
+      <h2>Get in touch!</h2>
+      <p>Have a project you'd like to discuss? Let's make something great together!
+        <br>Use the form below to let me know a little more about your objectives and I'll get back to you.
+      </p>
     </section>
-	
 
+    <section class="container-contact-form w-800px">
+      <!-- Contact form starts here -->
+      <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post"
+        action="https://formspree.io/f/mdovngll">
 
-<section class="container-contact-form w-800px">
-    <!-- Contact form starts here -->
-    <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mdovngll">
-
-        <div class="contact-form-upper text-center"><h2>Contact Me</h2>
-        </div>
-        <!-- Begin contact form fields -->
-        <div class="flex-row">
-            <div class="item-name">
-                <label for="full-name">Full Name</label>
-                <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="">
-            </div>
-
-            <div class="item-email">
-                <label for="email-address">Email</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
-            </div>
+        <div class="contact-form-upper text-center">
+          <h2>Contact Me</h2>
         </div>
 
         <div class="flex-row">
-            <div class="item-textarea">
-                <label for="message">Message</label>
-                <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
-            </div>
+          <div class="item-name">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="">
+          </div>
 
-            <div class="item-btn">
-                <button id="btn-submit" type="submit" class="btn-rounded"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button>
-            </div>
+          <div class="item-email">
+            <label for="email-address">Email</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="item-textarea">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
+          </div>
+
+          <div class="item-btn">
+            <button id="btn-submit" type="submit" class="btn-rounded"><span>Send</span><i
+                class="fas fa-arrow-circle-right"></i></button>
+          </div>
         </div>
 
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        <!-- End contact form fields -->
 
-    </form><!-- Contact form ends here -->
-</section><!-- End container for contact form -->
-</main>
+      </form><!-- Contact form ends here -->
+    </section><!-- End container for contact form -->
+  </main>
 
-<!-- footer -->
-<footer class="theme-dark text-center-desktop text-center-mobile">
-    <ul class="footer-icons">
-      <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://github.com/24130JoelmaR/24130joelmar.github.io/" target="_blank"><i class="fab fa-github-square"></i></a></li>
-      <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-      <li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-    </ul>
+  <!-- footer starts here -->
+  <footer class="theme-dark footer-3">
+    <div class="footer-cols-3 w-1356px footer-h3-weight-400">
+      <div class="col-3">
+        <a href="index.html" class="brand">
+          <img src="../assets/img/joelma-rodrigues-website-favicon-white.png" alt="Sample website logo"
+            style=" width: auto; height: auto;">
+        </a>
+        <h2>Joelma Rodrigues</h2>
+        <p>Explore my coding playground and see the web come to life.</p>
+        <ul class="footer-icons">
+          <li><a href="https://github.com/joelmarodrigues"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/joelma-rodrigues-510402256/"><i
+                class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3>Links</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../contact/contact.html">Get in touch</a></li>
+          <li><a href="../index.html#about-me">About me</a></li>
+          <li><a href="../privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3>Contact</h3>
+        <ul class="fa-ul footer-links">
+          <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
+            <address>21B Long Mile Road, Ballybruscar,<br>Ireland. Z23 A99.</address>
+          </li>
+          <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <a href="tel:123-456-7890">123-456-7890</a>
+          </li>
+          <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <a
+              href="#">24130@student.dorset-college.ie</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
-
+    <div class="copyright">
+      <p>Copyright © 2023 Joelma Rodrigues. All rights reserved.</p>
+    </div>
   </footer>
-<!-- section ends here -->
+  <!-- footer ends here -->
 
-<script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
-<script src="assets/js/header-9.js"></script>
-
+  <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
